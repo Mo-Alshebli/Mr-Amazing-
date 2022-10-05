@@ -45,9 +45,7 @@ for n in range (1000):
                 if in_val == abs(net[0]):
                     for j in range(len(Zw1)):
                         Zw1[j] = Zw1[j] + (learning_rate * (1 - net[0]) * X[i][j])
-                        # print(",,",round(Zw1[j],3))
-                        # print("====")
-                        # print(net[j])
+                       
 
                     bais[0] = bais[0] + learning_rate * (1 - net[0])
 
