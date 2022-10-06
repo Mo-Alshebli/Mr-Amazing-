@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1760</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>841</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>50</y>
+      <width>841</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1760</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuFilter_smooth">
+    <property name="title">
+     <string>Filter_Edage</string>
+    </property>
+    <addaction name="actionsobel"/>
+    <addaction name="actionroberts"/>
+    <addaction name="actionscharr"/>
+    <addaction name="actionprewitt"/>
+    <addaction name="actionEdage_Enhance"/>
+    <addaction name="actionEdage_Enhance_More"/>
+    <addaction name="actionFind_Edage"/>
+    <addaction name="actionCanny"/>
+   </widget>
+   <widget class="QMenu" name="menuBlur">
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <addaction name="actionMinFilter"/>
+    <addaction name="actionContour"/>
+    <addaction name="actionEmboss"/>
+    <addaction name="actionsharpen"/>
+    <addaction name="actionSepia"/>
+    <addaction name="actionMaxFilter"/>
+    <addaction name="actionMedianFilter"/>
+   </widget>
+   <widget class="QMenu" name="menuSmoothing">
+    <property name="title">
+     <string>Smoothing</string>
+    </property>
+    <addaction name="actionsmooth"/>
+    <addaction name="actionsmooth_More"/>
+    <addaction name="actionbilateralFlter"/>
+    <addaction name="actionBlur_3"/>
+    <addaction name="actionBox_BlUr"/>
+    <addaction name="actionGaussianBlur_2"/>
+   </widget>
+   <widget class="QMenu" name="menuFlip_image">
+    <property name="title">
+     <string>Flip_image</string>
+    </property>
+    <addaction name="actionLeft_Right"/>
+    <addaction name="actiontop_bootom"/>
+    <addaction name="actionrotate_90"/>
+   </widget>
+   <widget class="QMenu" name="menuspilt_color">
+    <property name="title">
+     <string>spilt_color</string>
+    </property>
+    <addaction name="actionRed_image"/>
+    <addaction name="actiongreen_image"/>
+    <addaction name="actionBlue_image"/>
+    <addaction name="actionGray_image"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuFilter_smooth"/>
+   <addaction name="menuBlur"/>
+   <addaction name="menuSmoothing"/>
+   <addaction name="menuFlip_image"/>
+   <addaction name="menuspilt_color"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionsobel">
+   <property name="text">
+    <string>sobel</string>
+   </property>
+  </action>
+  <action name="actionroberts">
+   <property name="text">
+    <string>roberts</string>
+   </property>
+  </action>
+  <action name="actionscharr">
+   <property name="text">
+    <string>scharr</string>
+   </property>
+  </action>
+  <action name="actionprewitt">
+   <property name="text">
+    <string>prewitt</string>
+   </property>
+  </action>
+  <action name="actionBlur">
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionMinFilter">
+   <property name="text">
+    <string>MinFilter</string>
+   </property>
+  </action>
+  <action name="actionContour">
+   <property name="text">
+    <string>Contour</string>
+   </property>
+  </action>
+  <action name="actionDetail">
+   <property name="text">
+    <string>Detail</string>
+   </property>
+  </action>
+  <action name="actionEmboss">
+   <property name="text">
+    <string>Emboss</string>
+   </property>
+  </action>
+  <action name="actionsharpen">
+   <property name="text">
+    <string>sharpen</string>
+   </property>
+  </action>
+  <action name="actionsmooth">
+   <property name="text">
+    <string>smooth</string>
+   </property>
+  </action>
+  <action name="actionsmooth_More">
+   <property name="text">
+    <string>smooth_More</string>
+   </property>
+  </action>
+  <action name="actionEdage_Enhance">
+   <property name="text">
+    <string>Edage_Enhance</string>
+   </property>
+  </action>
+  <action name="actionEdage_Enhance_More">
+   <property name="text">
+    <string>Edage_Enhance_More</string>
+   </property>
+  </action>
+  <action name="actionFind_Edage">
+   <property name="text">
+    <string>Find_Edage</string>
+   </property>
+  </action>
+  <action name="actionLeft_Right">
+   <property name="text">
+    <string>Left_Right</string>
+   </property>
+  </action>
+  <action name="actiontop_bootom">
+   <property name="text">
+    <string>top_bootom</string>
+   </property>
+  </action>
+  <action name="actionrotate_90">
+   <property name="text">
+    <string>rotate_90</string>
+   </property>
+  </action>
+  <action name="actionRed_image">
+   <property name="text">
+    <string>Red_image</string>
+   </property>
+  </action>
+  <action name="actiongreen_image">
+   <property name="text">
+    <string>green_image</string>
+   </property>
+  </action>
+  <action name="actionBlue_image">
+   <property name="text">
+    <string>Blue_image</string>
+   </property>
+  </action>
+  <action name="actionSepia">
+   <property name="text">
+    <string>Sepia</string>
+   </property>
+  </action>
+  <action name="actionBlur_2">
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionBox_Blur">
+   <property name="text">
+    <string>Box_Blur</string>
+   </property>
+  </action>
+  <action name="actionGaussianBlur">
+   <property name="text">
+    <string>GaussianBlur</string>
+   </property>
+  </action>
+  <action name="actionbilateralFlter">
+   <property name="text">
+    <string>bilateralFlter</string>
+   </property>
+  </action>
+  <action name="actionCanny">
+   <property name="text">
+    <string>Canny</string>
+   </property>
+  </action>
+  <action name="actionBlur_3">
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionBox_BlUr">
+   <property name="text">
+    <string>Box_BlUr</string>
+   </property>
+  </action>
+  <action name="actionGaussianBlur_2">
+   <property name="text">
+    <string>GaussianBlur</string>
+   </property>
+  </action>
+  <action name="actionMaxFilter">
+   <property name="text">
+    <string>MaxFilter</string>
+   </property>
+  </action>
+  <action name="actionMedianFilter">
+   <property name="text">
+    <string>MedianFilter</string>
+   </property>
+  </action>
+  <action name="actionGray_image">
+   <property name="text">
+    <string>Gray_image</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
