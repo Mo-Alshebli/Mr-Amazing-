@@ -1,0 +1,30 @@
+input = input('Enter your function e.g @(x) X^2+6: ','s');
+functio = str2func(input) ;
+h = input('Enter the value of h : ');
+Der = input('Which derivative you want to compute: ');
+x = input('At which point you want to approximate derivative: ');
+if d==1
+    Fd2 = (f(x+h)-f(x))/h; 
+    Bd2 = (f(x)-f(x-h))/h; 
+    Cd2 = (f(x+h)-f(x-h))/(2*h); 
+    Fd3 = (4*f(x+h)-f(x+2*h) -3*f(x))/(2*h); 
+    Bd3 = (-4*f(x-h)+f(x-2*h)+3*f(x))/(2*h); 
+    disp('Results using 2-point formulas\n')
+    fprintf('Forward: %.4f\n',Fd2)
+    fprintf('Backward: %.4f\n',Bd2)
+    fprintf('Central: %.4f\n',Cd2)
+    disp('Results using 3-point formulas\n')
+    fprintf('Forward: %.4f\n',Fd3 )
+    fprintf (' Backward: %.4f\n',Bd3)
+elseif d ==2
+    Fd3 = (f(x+2*h) -2*f(x+h) +f(x))/(h*2); 
+    Bd3 = (f(x-2*h) -2*f(x-h) +f(x))/(h*2); 
+    Ca3 = (f(x+h) - 2*f(x) + f(x-h))/(h*2);
+    disp('Results using 3-point formulas')
+    fprintf(' Forward: %.4f\n',Fd3)
+    fprintf('Backward: %.4f\n',Bd3)
+    fprintf('Central: %.4f\n',Ca3)
+else
+    disp('**Formula not available**');
+
+end
