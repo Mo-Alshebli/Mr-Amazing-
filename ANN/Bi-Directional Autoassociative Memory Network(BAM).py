@@ -1,10 +1,12 @@
 import numpy as np
+#============ tis function for convert from 2dim to one
 def re(x):
     E=[]
     for i in range(x.shape[0]):
         for j in range(x.shape[1]):
             E.append(x[i][j])
     return E
+#========== this for return the activation function 1
 def act(x):
     for j in range(x.shape[0]):
         for i in range(x.shape[1]):
@@ -17,6 +19,7 @@ def act(x):
 
     return x
 
+#========== this for return the activation function 2
 
 def act2(x):
     for j in range(x.shape[0]):
