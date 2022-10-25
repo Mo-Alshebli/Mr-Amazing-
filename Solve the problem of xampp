@@ -1,0 +1,11 @@
+Steps to fix this problem – 
+
+1-Stop the XAMPP server, MySQL and Apache
+2-Create a backup of the “/xampp/mysql/data” folder using a compression software
+3-Rename the “/xampp/mysql/data” folder to “/xampp/mysql/data-old”
+4-Create a new folder and name it “/xampp/mysql/data”
+5-Copy all folders from the “/xampp/mysql/backup” and paste it to the “/xampp/mysql/data” folder, which you have just created
+6-Copy all the databases from the “/xampp/mysql/data-old” folder and paste it to the “/xampp/mysql/data” folder
+7-Finally copy the “ibdata1” and all of the log files including “ib_logfile0, ib_logfile1 ” from “/xampp/mysql/data-old” and paste it to the “/xampp/mysql/data” folder
+8-Start MySQL from the XAMPP control panel
+9-Go to phpMyAdmin to check if all the databases are available and running properly
