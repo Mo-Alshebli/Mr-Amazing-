@@ -14,7 +14,7 @@ data.columns = ['text', 'label']
 data.dropna(inplace=True)
 
 # Create an instance of the pre_proccess_nlp class
-data_coun = pre_proccess_nlp()
+data_coun =  pre_process _and_countrazier()
 
 # Perform CountVectorizer on the text column of the data
 cou = data_coun.CountVectorizer_(data['text'])
