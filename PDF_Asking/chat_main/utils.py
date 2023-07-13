@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Set up your OpenAI API key
 load_dotenv()
-pinecone.init(api_key="eb457224-95f8-4881-a32d-b28bcf8adb23", environment="us-west4-gcp-free")
+pinecone.init(api_key="", environment="")
 
 # Define the name for your Pinecone index
 index_name = 'chat'
